@@ -1,0 +1,708 @@
+sistema,tabela,sigla,rotulo
+SIA,,BPA-C,Boletim de Produção Ambulatorial Consolidado
+SIA,,BPA-I,Boletim de Produção Ambulatorial Individualizado
+SIA,,APAC,Autorização de Procedimento Ambulatorial de Alta Complexidade (procedimento principal e secundário)
+SIA,,RAAS-AD,Registro das Ações Ambulatoriais de Saúde - Atenção Domiciliar
+SIA,,RAAS-PSI,Registro das Ações Ambulatoriais de Saúde - Psicossococial
+SIA,PA,PA_DOCORIG|S,para o procedimento secundário.
+SIA,PA,PA_DOCORIG|C,representa os dados dos procedimentos obtidos através de um BPA-Consolidado.
+SIA,PA,PA_DOCORIG|A,representa os dados dos procedimentos obtidos através do RAAS-AD
+SIA,PA,PA_DOCORIG|B,representa os dados dos procedimentos obtidos através do RAAS - Psicossocial
+SIA,PA,PA_DOCORIG|I,através do BPA - Individualizado.
+SIA,PA,PA_CODUNI,Código do SCNES do Estabelecimento de Saúde
+SIA,PA,PA_GESTAO,"Unidade da Federação + Código do Município do Gestor, ou UF0000 se a Unidade está sob Gestão Estadual"
+SIA,PA,PA_CONDIC,Sigla do Tipo de Gestão
+SIA,PA,PA_UFMUN,Unidade da Federação + município onde está localizado o Estabelecimento
+SIA,PA,PA_REGCT,Código da Regra Contratual
+SIA,PA,PA_INCOUT,Incremento Outros
+SIA,PA,PA_INCURG,Incremento Urgência
+SIA,PA,PA_TPUPS,Tipo de do Estabelecimento.
+SIA,PA,PA_TIPPRE,Tipo de Prestador
+SIA,PA,PA_MN_IND,Estabelecimento Mantido / Individual
+SIA,PA,PA_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,PA,PA_CNPJMNT,"CNPJ da Mantenedora do Estabelecimento ou zeros, caso não a tenha"
+SIA,PA,PA_CNPJ_CC,"CNPJ do órgão que recebeu pela produção por cessão de crédito ou zeros, caso não a tenha "
+SIA,PA,PA_MVM,Data de Processamento/Movimento (AAAAMM)
+SIA,PA,PA_CMP,Data da realização do Procedimento / Competência (AAAAMM)
+SIA,PA,PA_PROC_ID,Código de Procedimento Ambulatorial
+SIA,PA,PA_TPFIN,Tipo de Financiamento da produção
+SIA,PA,PA_SUBFIN,Subtipo de Financiamento da produção
+SIA,PA,PA_NIVCPL,Complexidade do Procedimento.
+SIA,PA,PA_DOCORIG,"Instrumento de Registro: B - BPA - Consolidado, I - BPA - Individualizado, P - APAC - Procedimento Principal, S- APAC – Procedimento Secundário"
+SIA,PA,PA_AUTORIZ,"Número da APAC ou número de autorização do BPA-I, conforme o caso. No BPA-I não é obrigatório, portanto, não é criticado."
+SIA,PA,PA_CNSMED,Número CNS do profissional de saúde executante
+SIA,PA,PA_CBOCOD,Código de Ocupação Brasileira do Profissional
+SIA,PA,PA_MOTSAI,"Motivo de Saída ou zeros, caso não tenha"
+SIA,PA,PA_OBITO,Indicador de Óbito (APAC)
+SIA,PA,PA_ENCERR,Indicador Encerramento (APAC)
+SIA,PA,PA_PERMAN,Indicador Permanência (APAC)
+SIA,PA,PA_ALTA,Indicador de Alta (APAC)
+SIA,PA,PA_TRANSF,Indicar de Transferência (APAC)
+SIA,PA,PA_CIDPRI,CID Principal (APAC ou BPA-I)
+SIA,PA,PA_CIDSEC,CID Secundário (APAC)
+SIA,PA,PA_CIDCAS,CID Causas Associadas (APAC)
+SIA,PA,PA_CATEND,Caráter de Atendimento (APAC ou BPA-I)
+SIA,PA,PA_IDADE,Idade do Paciente em anos
+SIA,PA,PA_FLIDADE,"Compatibilidade com a faixa de idade do procedimento (SIGTAP): Idade não exigida => 0, Idade compatível com o SIGTAP => 1, Idade fora da faixa do SIGTAP => 2, Idade inexistente => 3, Idade EM BRANCO => 4"
+SIA,PA,IDADEMIN,Idade mínima do paciente para realização do procedimento
+SIA,PA,IDADEMAX,Idade máxima do paciente para realização do procedimento
+SIA,PA,PA_SEXO,Sexo do Paciente
+SIA,PA,PA_RACACOR,Raça/Cor do Paciente
+SIA,PA,PA_MUNPCN,"Unidade da Federação + município do município de residência do paciente ou do estabelecimento, caso não se tenha à identificação do paciente o que ocorre no (BPA)"
+SIA,PA,PA_QTDPRO,Quantidade Produzida (APRESENTADA)
+SIA,PA,PA_QTDAPR,Quantidade aprovada do procedimento
+SIA,PA,PA_VALPRO,Valor Produzido (APRESENTADO
+SIA,PA,PA_VALAPR,Valor Aprovado do procedimento
+SIA,PA,PA_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,PA,PA_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,PA,PA_DIF_VAL,Diferença do Valor Unitário do procedimento praticado na Tabela Unificada com Valor Unitário praticado pelo Gestor da Produção multiplicado pela Quantidade Aprovada.
+SIA,PA,NU_VPA_TOT,Valor Unitário do Procedimento da Tabela VPA
+SIA,PA,NU_PA_TOT,Valor Unitário do Procedimento da Tabela SIGTAP
+SIA,PA,PA_INDICA,"Indicativo de situação da produção produzida: 0 = não aprovado, 5 = aprovado total 6 = aprovado parcial"
+SIA,PA,PA_CODOCO,Código de Ocorrência
+SIA,PA,PA_FLQT,FLAG de erro de Quantidade Produzida
+SIA,PA,PA_FLER,FLAG de erro de corpo da APAC
+SIA,PA,PA_ETNIA,Etnia do paciente
+SIA,PA,PA_VL_CF,Valor do Complemento Federal
+SIA,PA,PA_VL_CL,Valor do Complemento Local
+SIA,PA,PA_VL_INC,Valor do Incremento
+SIA,AD,AP_MVM,Data de Processamento / Movimento (AAAAMM)
+SIA,AD,AP_CONDIC,Sigla do Tipo de Gestão que o Estado ou Município está habilitado
+SIA,AD,AP_GESTAO,Unidade de Federação + Código Município de Gestão ou UF0000 se a Unidade está sob Gestão Estadual
+SIA,AD,AP_CODUNI,Código do CNES do Estabelecimento de Saúde
+SIA,AD,AP_AUTORIZ,Número da APAC
+SIA,AD,AP_CMP,Data de Atendimento ao Paciente / Competência (AAAAMM)
+SIA,AD,AP_PRIPAL,Procedimento Principal da APAC
+SIA,AD,AP_VL_AP,Valor Total da APAC Aprovado
+SIA,AD,AP_UFMUN,Unidade da Federação + Município do Estabelecimento
+SIA,AD,AP_TPUPS,Tipo de Estabelecimento
+SIA,AD,AP_TIPPRE,Tipo de Prestador
+SIA,AD,AP_MN_IND,Mantida / Individual
+SIA,AD,AP_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,AD,AP_CNPJMNT,CNPJ MANTENEDORA
+SIA,AD,AP_CNSPCN,CNS do Paciente
+SIA,AD,AP_COIDADE,Código da Idade
+SIA,AD,AP_NUIDADE,Numero da Idade
+SIA,AD,AP_SEXO,Sexo
+SIA,AD,AP_RACACOR,Cor / Raça
+SIA,AD,AP_MUNPCN,UF + Município de Residência do paciente
+SIA,AD,AP_UFNACIO,Nacionalidade do paciente
+SIA,AD,AP_CEPPCN,CEP do pacient
+SIA,AD,AP_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,AD,AP_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,AD,AP_DTINIC,Data de INÍCIO validade
+SIA,AD,AP_DTFIM,Data de FIM validade
+SIA,AD,AP_TPATEN,Tipo de Atendimento de APAC
+SIA,AD,AP_TPAPAC,"Indica se a APAC é 1 – inicial, 2 – continuidade, 3 – única"
+SIA,AD,AP_MOTSAI,Motivo de Saída e Permanência
+SIA,AD,AP_OBITO,Indicador de Óbito
+SIA,AD,AP_ENCERR,Indicador Encerramento
+SIA,AD,AP_PERMAN,Indicador Permanência
+SIA,AD,AP_ALTA,Indicador de Alta
+SIA,AD,AP_TRANSF,Indicar de Transferência
+SIA,AD,AP_DTOCOR,Data de Ocorrência que substitui a data de FIM de validade
+SIA,AD,AP_CODEMI,Código do Órgão emissor
+SIA,AD,AP_CATEND,Caráter do Atendimento
+SIA,AD,AP_APACANT,Número APAC Anterior
+SIA,AD,AP_UNISOL,Código CNES do Estabelecimento Solicitante
+SIA,AD,AP_DTSOLIC,Data da Solicitação
+SIA,AD,AP_DTAUT,Data da Autorização
+SIA,AD,AP_CIDCAS,CID Causas Associadas
+SIA,AD,AP_CIDPRI,CID Principal
+SIA,AD,AP_CIDSEC,CID Secundário
+SIA,AD,AP_ETNIA,Etnia do Paciente
+SIA,AM,AP_MVM,Data de Processamento / Movimento (AAAAMM)
+SIA,AM,AP_CONDIC,Sigla do Tipo de Gestão que o Estado ou Município está habilitado
+SIA,AM,AP_GESTAO,Unidade de Federação + Código Município de Gestão ou UF0000 se a Unidade está sob Gestão Estadual
+SIA,AM,AP_CODUNI,Código do CNES do Estabelecimento de Saúde
+SIA,AM,AP_AUTORIZ,Número da APAC
+SIA,AM,AP_CMP,Data de Atendimento ao Paciente / Competência (AAAAMM)
+SIA,AM,AP_PRIPAL,Procedimento Principal da APAC
+SIA,AM,AP_VL_AP,Valor Total da APAC Aprovado
+SIA,AM,AP_UFMUN,Unidade da Federação + Município do Estabelecimento
+SIA,AM,AP_TPUPS,Tipo de Estabelecimento
+SIA,AM,AP_TIPPRE,Tipo de Prestador
+SIA,AM,AP_MN_IND,Mantida / Individual
+SIA,AM,AP_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,AM,AP_CNPJMNT,CNPJ MANTENEDORA
+SIA,AM,AP_CNSPCN,CNS do Paciente
+SIA,AM,AP_COIDADE,Código da Idade
+SIA,AM,AP_NUIDADE,Numero da Idade
+SIA,AM,AP_SEXO,Sexo
+SIA,AM,AP_RACACOR,Cor / Raça
+SIA,AM,AP_MUNPCN,UF + Município de Residência do paciente
+SIA,AM,AP_UFNACIO,Nacionalidade do paciente
+SIA,AM,AP_CEPPCN,CEP do paciente
+SIA,AM,AP_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,AM,AP_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,AM,AP_DTINIC,Data de INÍCIO validade
+SIA,AM,AP_DTFIM,Data de FIM validade
+SIA,AM,AP_TPATEN,Tipo de Atendimento de APAC
+SIA,AM,AP_TPAPAC,"Indica se a APAC é 1 – inicial, 2 – continuidade, 3 – única"
+SIA,AM,AP_MOTSAI,Motivo de Saída e Permanência
+SIA,AM,AP_OBITO,Indicador de Óbito
+SIA,AM,AP_ENCERR,Indicador Encerramento
+SIA,AM,AP_PERMAN,Indicador Permanência
+SIA,AM,AP_ALTA,Indicador de Alta
+SIA,AM,AP_TRANSF,Indicar de Transferência
+SIA,AM,AP_DTOCOR,Data de Ocorrência que substitui a data de FIM de validade
+SIA,AM,AP_CODEMI,Código do Órgão emissor
+SIA,AM,AP_CATEND,Caráter do Atendimento
+SIA,AM,AP_APACANT,Número APAC Anterior
+SIA,AM,AP_UNISOL,Código CNES do Estabelecimento Solicitante
+SIA,AM,AP_DTSOLIC,Data da Solicitação
+SIA,AM,AP_DTAUT,Data da Autorização
+SIA,AM,AP_CIDCAS,CID Causas Associadas
+SIA,AM,AP_CIDPRI,CID Principal
+SIA,AM,AP_CIDSEC,CID Secundário
+SIA,AM,AP_ETNIA,Etnia do Paciente
+SIA,AM,AM_PESO,Peso do Paciente em kg
+SIA,AM,AM_ALTURA,Altura do Paciente
+SIA,AM,AM_TRANSPL,Indicador se o paciente fez transplante
+SIA,AM,AM_QTDTRAN,Quantidade de Transplantes
+SIA,AM,AM_GESTANT,GESTANTE (S=Sim; N=Não)
+SIA,AN,AP_MVM,Data de Processamento / Movimento (AAAAMM)
+SIA,AN,AP_CONDIC,Sigla do Tipo de Gestão que o Estado ou Município está habilitado
+SIA,AN,AP_GESTAO,Unidade de Federação + Código Município de Gestão ou UF0000 se a Unidade está sob Gestão Estadual
+SIA,AN,AP_CODUNI,Código do CNES do Estabelecimento de Saúde
+SIA,AN,AP_AUTORIZ,Número da APAC
+SIA,AN,AP_CMP,Data de Atendimento ao Paciente / Competência (AAAAMM)
+SIA,AN,AP_PRIPAL,Procedimento Principal da APAC
+SIA,AN,AP_VL_AP,Valor Total da APAC Aprovado
+SIA,AN,AP_UFMUN,Unidade da Federação + Município do Estabelecimento
+SIA,AN,AP_TPUPS,Tipo de Estabelecimento
+SIA,AN,AP_TIPPRE,Tipo de Prestador
+SIA,AN,AP_MN_IND,Mantida / Individual
+SIA,AN,AP_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,AN,AP_CNPJMNT,CNPJ MANTENEDORA
+SIA,AN,AP_CNSPCN,CNS do Paciente
+SIA,AN,AP_COIDADE,Código da Idade
+SIA,AN,AP_NUIDADE,Numero da Idade
+SIA,AN,AP_SEXO,Sexo
+SIA,AN,AP_RACACOR,Cor / Raça
+SIA,AN,AP_MUNPCN,UF + Município de Residência do paciente
+SIA,AN,AP_UFNACIO,Nacionalidade do paciente
+SIA,AN,AP_CEPPCN,CEP do paciente
+SIA,AN,AP_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,AN,AP_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,AN,AP_DTINIC,Data de INÍCIO validade
+SIA,AN,AP_DTFIM,Data de FIM validade
+SIA,AN,AP_TPATEN,Tipo de Atendimento de APAC
+SIA,AN,AP_TPAPAC,"Indica se a APAC é 1 – inicial, 2 – continuidade, 3 – única"
+SIA,AN,AP_MOTSAI,Motivo de Saída e Permanência
+SIA,AN,AP_OBITO,Indicador de Óbito
+SIA,AN,AP_ENCERR,Indicador Encerramento
+SIA,AN,AP_PERMAN,Indicador Permanência
+SIA,AN,AP_ALTA,Indicador de Alta
+SIA,AN,AP_TRANSF,Indicar de Transferência
+SIA,AN,AP_DTOCOR,Data de Ocorrência que substitui a data de FIM de validade
+SIA,AN,AP_CODEMI,Código do Órgão emissor
+SIA,AN,AP_CATEND,Caráter do Atendimento
+SIA,AN,AP_APACANT,Número APAC Anterior
+SIA,AN,AP_UNISOL,Código CNES do Estabelecimento Solicitante
+SIA,AN,AP_DTSOLIC,Data da Solicitação
+SIA,AN,AP_DTAUT,Data da Autorização
+SIA,AN,AP_CIDCAS,CID Causas Associadas
+SIA,AN,AP_CIDPRI,CID Principal
+SIA,AN,AP_CIDSEC,CID Secundário
+SIA,AN,AP_ETNIA,Etnia do Paciente
+SIA,AN,AN_DTPDR,Data (AAAAMMDD) da PRIMEIRA diálise realizada (*)
+SIA,AN,AN_ALTURA,Altura do Paciente em CM (*)
+SIA,AN,AN_PESO,Peso do Paciente em Kg (*)
+SIA,AN,AN_DIURES,Diurese em ML (*)
+SIA,AN,AN_GLICOS,Glicose em Mg/dl (*)
+SIA,AN,AN_ACEVAS,Acesso Vascular (S = Sim; N = Não) (*)
+SIA,AN,AN_ULSOAB,Ultrasonografia Abdominal (S = Sim; N = Não) (*)
+SIA,AN,AN_TRU,TRU (**)
+SIA,AN,AN_INTFIS,Quantidade de intervenção de Fistola (**)
+SIA,AN,AN_CNCDO,Inscrito na lista da CNCDO (S = Sim; N = Não) (**)
+SIA,AN,AN_ALBUMI,Albumina em g% (***)
+SIA,AN,AN_HCV,Indicativo de presença de Anticorpos de HCV (P = Positivo; N = Negativo) (***)
+SIA,AN,AN_HBSAG,Indicativo de HBsAg (P = Positivo; N = Negativo) (***)
+SIA,AN,AN_HIV,Indicativo de presença de anticorpos de HIV (P = Positivo; N = Negativo) (***)
+SIA,AN,AN_HB,HB em g% (***)
+SIA,AQ,AP_MVM,Data de Processamento / Movimento (AAAAMM)
+SIA,AQ,AP_CONDIC,Sigla do Tipo de Gestão que o Estado ou Município está habilitado
+SIA,AQ,AP_GESTAO,Unidade de Federação + Código Município de Gestão ou UF0000 se a Unidade está sob Gestão Estadual
+SIA,AQ,AP_CODUNI,Código do CNES do Estabelecimento de Saúde
+SIA,AQ,AP_AUTORIZ,Número da APAC
+SIA,AQ,AP_CMP,Data de Atendimento ao Paciente / Competência (AAAAMM)
+SIA,AQ,AP_PRIPAL,Procedimento Principal da APAC
+SIA,AQ,AP_VL_AP,Valor Total da APAC Aprovado
+SIA,AQ,AP_UFMUN,Unidade da Federação + Município do Estabelecimento
+SIA,AQ,AP_TPUPS,Tipo de Estabelecimento
+SIA,AQ,AP_TIPPRE,Tipo de Prestador
+SIA,AQ,AP_MN_IND,Mantida / Individual
+SIA,AQ,AP_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,AQ,AP_CNPJMNT,CNPJ MANTENEDORA
+SIA,AQ,AP_CNSPCN,CNS do Paciente
+SIA,AQ,AP_COIDADE,Código da Idade
+SIA,AQ,AP_NUIDADE,Numero da Idade
+SIA,AQ,AP_SEXO,Sexo
+SIA,AQ,AP_RACACOR,Cor / Raça
+SIA,AQ,AP_MUNPCN,UF + Município de Residência do paciente
+SIA,AQ,AP_UFNACIO,Nacionalidade do paciente
+SIA,AQ,AP_CEPPCN,CEP do paciente
+SIA,AQ,AP_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,AQ,AP_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,AQ,AP_DTINIC,Data de INÍCIO validade
+SIA,AQ,AP_DTFIM,Data de FIM validade
+SIA,AQ,AP_TPATEN,Tipo de Atendimento de APAC
+SIA,AQ,AP_TPAPAC,"Indica se a APAC é 1 – inicial, 2 – continuidade, 3 – única"
+SIA,AQ,AP_MOTSAI,Motivo de Saída e Permanência
+SIA,AQ,AP_OBITO,Indicador de Óbito
+SIA,AQ,AP_ENCERR,Indicador Encerramento
+SIA,AQ,AP_PERMAN,Indicador Permanência
+SIA,AQ,AP_ALTA,Indicador de Alta
+SIA,AQ,AP_TRANSF,Indicar de Transferência
+SIA,AQ,AP_DTOCOR,Data de Ocorrência que substitui a data de FIM de validade
+SIA,AQ,AP_CODEMI,Código do Órgão emissor
+SIA,AQ,AP_CATEND,Caráter do Atendimento
+SIA,AQ,AP_APACANT,Número APAC Anterior
+SIA,AQ,AP_UNISOL,Código CNES do Estabelecimento Solicitante
+SIA,AQ,AP_DTSOLIC,Data da Solicitação
+SIA,AQ,AP_DTAUT,Data da Autorização
+SIA,AQ,AP_CIDCAS,CID Causas Associadas
+SIA,AQ,AP_CIDPRI,CID Principal
+SIA,AQ,AP_CIDSEC,CID Secundário
+SIA,AQ,AP_ETNIA,Etnia do Paciente
+SIA,AQ,AQ_CID10,CID 10 Topografia
+SIA,AQ,AQ_LINFIN,Linfonodos regionais invadidos (S = Sim; N =Não; 3= Não Avaliáveis)
+SIA,AQ,AQ_ESTADI,Estádio – UICC (0;1;2;3;4)
+SIA,AQ,AQ_GRAHIS,Grau Histopatológico
+SIA,AQ,AQ_DTIDEN,Data da identificação patológica do caso (AAAAMMDD)
+SIA,AQ,AQ_TRANTE,Tratamentos anteriores (S=Sim; N=Não)
+SIA,AQ,AQ_CIDINI1,CID 1o. Tratamento anterior
+SIA,AQ,AQ_DTINI1,Data de inicio (AAAAMMDD) 1o tratamento anterior
+SIA,AQ,AQ_CIDINI2,CID 2o. Tratamento anterior
+SIA,AQ,AQ_DTINI2,Data de inicio (AAAAMMDD) 2o tratamento anterior
+SIA,AQ,AQ_CIDINI3,CID 3o. Tratamento anterior
+SIA,AQ,AQ_DTINI3,Data de inicio (AAAAMMDD) 3o tratamento anterior
+SIA,AQ,AQ_CONTTR,Continuidade do tratamento (S=Sim; N=Não)
+SIA,AQ,AQ_DTINTR,Data de INICIO do tratamento solicitado (AAAAMMDD)
+SIA,AQ,AQ_ESQU_P1,ESQUEMA (Sigla ou abrev) – 5 primeiras posições
+SIA,AQ,AQ_TOTMPL,Total de MESES Planejados
+SIA,AQ,AQ_TOTMAU,Total de MESES Autorizados
+SIA,AQ,AQ_ESQU_P2,ESQUEMA (Sigla ou abrev) - 10 últimas posições
+SIA,AR,AP_MVM,Data de Processamento / Movimento (AAAAMM)
+SIA,AR,AP_CONDIC,Sigla do Tipo de Gestão que o Estado ou Município está habilitado
+SIA,AR,AP_GESTAO,Unidade de Federação + Código Município de Gestão ou UF0000 se a Unidade está sob Gestão Estadual
+SIA,AR,AP_CODUNI,Código do CNES do Estabelecimento de Saúde
+SIA,AR,AP_AUTORIZ,Número da APAC
+SIA,AR,AP_CMP,Data de Atendimento ao Paciente / Competência (AAAAMM)
+SIA,AR,AP_PRIPAL,Procedimento Principal da APAC
+SIA,AR,AP_VL_AP,Valor Total da APAC Aprovado
+SIA,AR,AP_UFMUN,Unidade da Federação + Município do Estabelecimento
+SIA,AR,AP_TPUPS,Tipo de Estabelecimento
+SIA,AR,AP_TIPPRE,Tipo de Prestador
+SIA,AR,AP_MN_IND,Mantida / Individual
+SIA,AR,AP_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,AR,AP_CNPJMNT,CNPJ MANTENEDORA
+SIA,AR,AP_CNSPCN,CNS do Paciente
+SIA,AR,AP_COIDADE,Código da Idade
+SIA,AR,AP_NUIDADE,Numero da Idade
+SIA,AR,AP_SEXO,Sexo
+SIA,AR,AP_RACACOR,Cor / Raça
+SIA,AR,AP_MUNPCN,UF + Município de Residência do paciente
+SIA,AR,AP_UFNACIO,Nacionalidade do paciente
+SIA,AR,AP_CEPPCN,CEP do paciente
+SIA,AR,AP_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,AR,AP_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,AR,AP_DTINIC,Data de INÍCIO validade
+SIA,AR,AP_DTFIM,Data de FIM validade
+SIA,AR,AP_TPATEN,Tipo de Atendimento de APAC
+SIA,AR,AP_TPAPAC,"Indica se a APAC é 1 – inicial, 2 – continuidade, 3 – única"
+SIA,AR,AP_MOTSAI,Motivo de Saída e Permanência
+SIA,AR,AP_OBITO,Indicador de Óbito
+SIA,AR,AP_ENCERR,Indicador Encerramento
+SIA,AR,AP_PERMAN,Indicador Permanência
+SIA,AR,AP_ALTA,Indicador de Alta
+SIA,AR,AP_TRANSF,Indicar de Transferência
+SIA,AR,AP_DTOCOR,Data de Ocorrência que substitui a data de FIM de validade
+SIA,AR,AP_CODEMI,Código do Órgão emissor
+SIA,AR,AP_CATEND,Caráter do Atendimento
+SIA,AR,AP_APACANT,Número APAC Anterior
+SIA,AR,AP_UNISOL,Código CNES do Estabelecimento Solicitante
+SIA,AR,AP_DTSOLIC,Data da Solicitação
+SIA,AR,AP_DTAUT,Data da Autorização
+SIA,AR,AP_CIDCAS,CID Causas Associadas
+SIA,AR,AP_CIDPRI,CID Principal
+SIA,AR,AP_CIDSEC,CID Secundário
+SIA,AR,AP_ETNIA,Etnia do Paciente
+SIA,AR,AR_SMRD,
+SIA,AR,AR_CID10,CID 10 Topografia
+SIA,AR,AR_LINFIN,Linfonodos regionais invadidos (S = Sim; N =Não; 3= Não Avaliáveis)
+SIA,AR,AR_ESTADI,Estádio – UICC (0;1;2;3;4)
+SIA,AR,AR_GRAHIS,Grau Histopatológico
+SIA,AR,AR_DTIDEN,Data da identificação patológica do caso (AAAAMMDD)
+SIA,AR,AR_TRANTE,Tratamentos anteriores (S=Sim; N=Não)
+SIA,AR,AR_CIDINI1,CID 1o. Tratamento anterior
+SIA,AR,AR_DTINI1,Data de INICIO (AAAAMMDD) 1o tratamento anterior
+SIA,AR,AR_CIDINI2,CID 2o. Tratamento anterior
+SIA,AR,AR_DTINI2,Data de INICIO (AAAAMMDD) 2o tratamento anterior
+SIA,AR,AR_CIDINI3,CID 3o. Tratamento anterior
+SIA,AR,AR_DTINI3,Data de inicio (AAAAMMDD) 3o tratamento anterior
+SIA,AR,AR_CONTTR,Continuidade do tratamento (S=Sim; N=Não)
+SIA,AR,AR_DTINTR,Data de INICIO do tratamento solicitado (AAAAMMDD)
+SIA,AR,AR_FINALI,Finalidade Do Tratamento (1=RADICAL; 2=ADJUVANTE; 3=ANTIÁLGICA; 4=PALIATIVA; 5=PRÉVIA; 6=ANTIHEMORRÁGICA)
+SIA,AR,AR_CIDTR1,CID Topográfico 1o
+SIA,AR,AR_CIDTR2,CID Topográfico 2o
+SIA,AR,AR_CIDTR3,CID Topográfico 3o
+SIA,AR,AR_NUMC1,No. Campo/Inserções 1o
+SIA,AR,AR_INIAR1,Data de INICIO 1o (AAAAMMDD)
+SIA,AR,AR_INIAR2,Data de INICIO 2o (AAAAMMDD)
+SIA,AR,AR_INIAR3,Data de INICIO 3o (AAAAMMDD)
+SIA,AR,AR_FIMAR1,Data de Fim 1o (AAAAMMDD)
+SIA,AR,AR_FIMAR2,Data de FIM 2o (AAAAMMDD)
+SIA,AR,AR_FIMAR3,Data de Fim 3o (AAAAMMDD)
+SIA,AR,AR_NUMC2,No. Campo/Inserções 2o
+SIA,AR,AR_NUMC3,No. Campo/Inserções 3o
+SIA,AB,AP_MVM,Data de Processamento / Movimento (AAAAMM)
+SIA,AB,AP_CONDIC,Sigla do Tipo de Gestão que o Estado ou Município está habilitado
+SIA,AB,AP_GESTAO,Unidade de Federação + Código Município de Gestão ou UF0000 se a Unidade está sob Gestão Estadual
+SIA,AB,AP_CODUNI,Código do CNES do Estabelecimento de Saúde
+SIA,AB,AP_AUTORIZ,Número da APAC
+SIA,AB,AP_CMP,Data de Atendimento ao Paciente / Competência (AAAAMM)
+SIA,AB,AP_PRIPAL,Procedimento Principal da APAC
+SIA,AB,AP_VL_AP,Valor Total da APAC Aprovado
+SIA,AB,AP_UFMUN,Unidade da Federação + Município do Estabelecimento
+SIA,AB,AP_TPUPS,Tipo de Estabelecimento
+SIA,AB,AP_TIPPRE,Tipo de Prestador
+SIA,AB,AP_MN_IND,Mantida / Individual
+SIA,AB,AP_CNPJCPF,CNPJ do Estabelecimento executante
+SIA,AB,AP_CNPJMNT,CNPJ MANTENEDORA
+SIA,AB,AP_CNSPCN,CNS do Paciente
+SIA,AB,AP_COIDADE,Código da Idade
+SIA,AB,AP_NUIDADE,Numero da Idade
+SIA,AB,AP_SEXO,Sexo
+SIA,AB,AP_RACACOR,Cor / Raça
+SIA,AB,AP_MUNPCN,UF + Município de Residência do paciente
+SIA,AB,AP_UFNACIO,Nacionalidade do paciente
+SIA,AB,AP_CEPPCN,CEP do paciente
+SIA,AB,AP_UFDIF,"Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento (N=não, S=sim)"
+SIA,AB,AP_MNDIF,"Indica se o município de residência do paciente é diferente do município de localização do estabelecimento (N=não, S=sim)"
+SIA,AB,AP_DTINIC,Data de INÍCIO validade
+SIA,AB,AP_DTFIM,Data de FIM validade
+SIA,AB,AP_TPATEN,Tipo de Atendimento de APAC
+SIA,AB,AP_TPAPAC,"Indica se a APAC é 1 – inicial, 2 – continuidade, 3 – única"
+SIA,AB,AP_MOTSAI,Motivo de Saída e Permanência
+SIA,AB,AP_OBITO,Indicador de Óbito
+SIA,AB,AP_ENCERR,Indicador Encerramento
+SIA,AB,AP_PERMAN,Indicador Permanência
+SIA,AB,AP_ALTA,Indicador de Alta
+SIA,AB,AP_TRANSF,Indicar de Transferência
+SIA,AB,AP_DTOCOR,Data de Ocorrência que substitui a data de FIM de validade
+SIA,AB,AP_CODEMI,Código do Órgão emissor
+SIA,AB,AP_CATEND,Caráter do Atendimento
+SIA,AB,AP_APACANT,Número APAC Anterior
+SIA,AB,AP_UNISOL,Código CNES do Estabelecimento Solicitante
+SIA,AB,AP_DTSOLIC,Data da Solicitação
+SIA,AB,AP_DTAUT,Data da Autorização
+SIA,AB,AP_CIDCAS,CID Causas Associadas
+SIA,AB,AP_CIDPRI,CID Principal
+SIA,AB,AP_CIDSEC,CID Secundário
+SIA,AB,AP_ETNIA,Etnia do Paciente
+SIA,AB,AB_IMC,IMC do Paciente
+SIA,AB,AB_PROCAIH,Procedimento do AIH
+SIA,AB,AB_DTCIRUR,Data da Cirurgia
+SIA,AB,AB_NUMAIH,Número da AIH
+SIA,AB,AB_PRCAIH2,Procedimento do AIH
+SIA,AB,AB_PRCAIH3,Procedimento do AIH
+SIA,AB,AB_NUMAIH2,Número da AIH
+SIA,AB,AB_DTCIRG2,Data da Cirurgia
+SIA,AB,AB_MESACOM,Número em MESES de Acompanhamento
+SIA,AB,AB_ANOACOM,Ano de Acompanhamento
+SIA,AB,AB_PONTBAR,Pontuação de Barros
+SIA,AB,AB_TABBARR,Tabela de Barros
+SIA,SAD,CNES_EXEC,Código do SCNES do Estabelecimento de Saúde
+SIA,SAD,GESTAO,"Unidade da Federação + Código do Município do Gestor, ou UF0000 se a Unidade está sob Gestão Estadual"
+SIA,SAD,CONDIC,Sigla do Tipo de Gestão
+SIA,SAD,UFMUN,Unidade da Federação + município onde está localizado o Estabelecimento
+SIA,SAD,TPUPS,Tipo de do Estabelecimento
+SIA,SAD,MN_IND,Estabelecimento Mantido / Individual
+SIA,SAD,CNPJCPF,CNPJ do Estabelecimento executante
+SIA,SAD,CNPJMNT,"CNPJ da Mantenedora do Estabelecimento ou zeros, caso não a tenha"
+SIA,SAD,DT_PROCESS,Mês de Processamento (AAAAMM)
+SIA,SAD,DT_ATEND,Mês do Atendimento (AAAAMM)
+SIA,SAD,CNS_PAC,CNS do Paciente (criptografia)
+SIA,SAD,DTNASC,Data de nascimento do Paciente
+SIA,SAD,TPIDADEPAC,"Tipo da Idade do Paciente em anos, meses ou dias. Calculado a partir da data de nascimento"
+SIA,SAD,IDADEPAC,Idade do Paciente em anos
+SIA,SAD,NACION_PAC,Nacionalidade do Paciente
+SIA,SAD,SEXOPAC,Sexo do Paciente
+SIA,SAD,RACACOR,Raça/Cor do Paciente
+SIA,SAD,ETNIA,Etnia do paciente (Caso seja da Raça/Cor Indígena)
+SIA,SAD,MUNPAC,Unidade da Federação + município do município de residência do paciente
+SIA,SAD,MOT_COB,Motivo de Saída/Permanência
+SIA,SAD,DT_MOTCOB,"Data da ocorrência no caso de alta, transferência ou óbito"
+SIA,SAD,CATEND,Caráter de Atendimento
+SIA,SAD,CIDPRI,CID Principal
+SIA,SAD,CIDASSOC,CID Causas Associadas
+SIA,SAD,ORIGEM_PAC,Origem do Paciente
+SIA,SAD,DT_INICIO,Data de Início
+SIA,SAD,DT_FIM,Data de Fim
+SIA,SAD,COB_ESF,Indica se a região de atendimento do Paciente tem cobertura de Estratégia Saúde da Família
+SIA,SAD,CNES_ESF,Código do SCNES do Estabelecimento de Saúde Unidade da Saúde da Família da região
+SIA,SAD,DESTINO_PAC,Destino do Paciente
+SIA,SAD,PA_PROC_ID,Código de Procedimento Ambulatorial
+SIA,SAD,PA_QTDPRO,Quantidade Produzida (APRESENTADA)
+SIA,SAD,PA_QTDAPR,Quantidade aprovada do procedimento
+SIA,SAD,PA_SRV,Serviço Especializado
+SIA,SAD,PA_CLAS_S,Classificação do Serviço
+SIA,SAD,PA_EQUIPE,Código da Equipe (somente para o Instrumento de registro RAAS)
+SIA,SAD,PA_TP_EQP,Tipo de Equipe (somente para o Instrumento de registro RAAS)
+SIA,SAD,PA_CID,CID do Procedimento
+SIA,SAD,DT_INICIO,Data de Inicio do Atendimento (DDMMAAAA)
+SIA,SAD,DT_FIM,Data de Fim do Atendimento (DDMMAAAA)
+SIA,SAD,PERMANENCIA,Permanência em Atendimento
+SIA,SAD,QTDATE,Quantidade de Atendimentos
+SIA,SAD,QTDPCN,Quantidade de Pacientes
+SIA,PS,CNES_EXEC,Código do SCNES do Estabelecimento de Saúde
+SIA,PS,GESTAO,"Unidade da Federação + Código do Município do Gestor, ou UF0000 se a Unidade está sob Gestão Estadual"
+SIA,PS,CONDIC,Sigla do Tipo de Gestão
+SIA,PS,UFMUN,Unidade da Federação + município onde está localizado o Estabelecimento
+SIA,PS,TPUPS,Tipo de do Estabelecimento
+SIA,PS,TIPPRE,Tipo de Prestador
+SIA,PS,MN_IND,Estabelecimento Mantido / Individual
+SIA,PS,CNPJCPF,CNPJ do Estabelecimento executante
+SIA,PS,CNPJMNT,"CNPJ da Mantenedora do Estabelecimento ou zeros, caso não a tenha"
+SIA,PS,DT_PROCESS,Data de Processamento (AAAAMM)
+SIA,PS,DT_ATEND,Data do Atendimento (AAAAMM)
+SIA,PS,CNS_PAC,CNS do Paciente (criptografia)
+SIA,PS,DTNASC,Data de nascimento do Paciente
+SIA,PS,TPIDADEPAC,"Tipo da Idade do Paciente em anos, meses ou dias. Calculado a partir da data de nascimento"
+SIA,PS,IDADEPAC,Idade do Paciente em anos
+SIA,PS,NACION_PAC,Nacionalidade do Paciente
+SIA,PS,SEXOPAC,Sexo do Paciente
+SIA,PS,RACACOR,Raça/Cor do Paciente
+SIA,PS,ETNIA,Etnia do paciente (Caso seja da Raça/Cor Indígena)
+SIA,PS,MUNPAC,Unidade da Federação + município do município de residência do paciente
+SIA,PS,MOT_COB,Motivo de Saída/Permanência
+SIA,PS,DT_MOTCOB,"Data da ocorrência no caso de alta, transferência ou óbito"
+SIA,PS,CATEND,Caráter de Atendimento
+SIA,PS,CIDPRI,CID Principal
+SIA,PS,CIDASSOC,CID Causas Associadas
+SIA,PS,ORIGEM_PAC,Origem do Paciente
+SIA,PS,DT_INICIO,Data de Início
+SIA,PS,DT_FIM,Data de Fim
+SIA,PS,COB_ESF,Indica se a região de atendimento do Paciente tem cobertura de Estratégia Saúde da Família
+SIA,PS,CNES_ESF,Código do SCNES do Estabelecimento de Saúde Unidade da Saúde da Família da região
+SIA,PS,DESTINOPAC,Destino do Paciente
+SIA,PS,PA_PROC_ID,Ação Realizada
+SIA,PS,QT_APRES,Quantidade Apresentada
+SIA,PS,QT_APROV,Quantidade Aprovada
+SIA,PS,SERV,Código do Serviço Especializado
+SIA,PS,CLASS,Código da Classificação do Serviço
+SIA,PS,SIT_RUA,"Situação de Rua (S- SIM, N – NÃO)"
+SIA,PS,TP_DROGA,"TIPO DE DROGA (A -Alcool, C -Crack,O - Outros)"
+SIA,PS,LOC_REALIZ,Local de Realização (C - CAPS OU T – Território)
+SIA,PS,INICIO,Data de Inicio do Atendimento (DDMMAAAA)
+SIA,PS,FIM,Data de Fim do Atendimento (DDMMAAAA)
+SIA,PS,PERMANEN,Permanência em Atendimento
+SIA,PS,QTDATE,Quantidade de Atendimentos
+SIA,PS,QTDPCN,Quantidade de Pacientes
+SIH,RD,UF_ZI ,Município Gestor
+SIH,RD,ANO_CMPT,"Ano de processamento da AIH, no formato aaaa"
+SIH,RD,MES_CMPT,"Mês de processamento da AIH, no formato mm"
+SIH,RD,ESPEC,Especialidade do Leito
+SIH,RD,CGC_HOSP,CNPJ do Estabelecimento.
+SIH,RD,N_AIH ,Número da AIH.
+SIH,RD,IDENT,Identificação do tipo da AIH.
+SIH,RD,CEP,CEP do paciente.
+SIH,RD,MUNIC_RES,Município de Residência do Paciente
+SIH,RD,NASC,Data de nascimento do paciente (aaaammdd).
+SIH,RD,SEXO,Sexo do paciente.
+SIH,RD,UTI_MES_IN,Zerado
+SIH,RD,UTI_MES_AN,Zerado
+SIH,RD,UTI_MES_AL,Zerado
+SIH,RD,UTI_MES_TO,Quantidade de dias de UTI no mês.
+SIH,RD,MARCA_UTI,Indica qual o tipo de UTI utilizada pelo paciente.
+SIH,RD,UTI_INT_IN,Zerado
+SIH,RD,UTI_INT_AN,Zerado
+SIH,RD,UTI_INT_AL,Zerado
+SIH,RD,UTI_INT_TO,Quantidade de diárias em unidade intermediaria
+SIH,RD,DIAR_ACOM,Quantidade de diárias de acompanhante.
+SIH,RD,QT_DIARIAS,Quantidade de diárias.
+SIH,RD,PROC_SOLIC,Procedimento solicitado.
+SIH,RD,PROC_REA,Procedimento realizado.
+SIH,RD,VAL_SH,Valor de serviços hospitalares.
+SIH,RD,VAL_SP,Valor de serviços profissionais
+SIH,RD,VAL_SADT,Zerado
+SIH,RD,VAL_RN,Zerado
+SIH,RD,VAL_ACOMP,Zerado
+SIH,RD,VAL_ORTP,Zerado
+SIH,RD,VAL_SANGUE,Zerado
+SIH,RD,VAL_SADTSR,Zerado
+SIH,RD,VAL_TRANSP,Zerado
+SIH,RD,VAL_OBSANG,Zerado
+SIH,RD,VAL_PED1AC,Zerado
+SIH,RD,VAL_TOT,Valor total da AIH.
+SIH,RD,VAL_UTI,Valor de UTI.
+SIH,RD,US_TOT,"Valor total, em dólar."
+SIH,RD,DI_INTER,Data de internação no formato aaammdd.
+SIH,RD,DT_SAIDA,"Data de saída, no formato aaaammdd."
+SIH,RD,DIAG_PRINC,Código do diagnóstico principal (CID10).
+SIH,RD,DIAG_SECUN,Código do diagnostico secundário (CID10). Preenchido com zeros a partir de 201501.
+SIH,RD,COBRANCA,Motivo de Saída/Permanência
+SIH,RD,NATUREZA,Natureza jurídica do hospital (com conteúdo até maio/12). Era utilizada a classificação de Regime e Natureza.
+SIH,RD,NAT_JUR,"Natureza jurídica do Estabelecimento, conforme a Comissão Nacional de Classificação - CONCLA"
+SIH,RD,DESTAO,Indica o tipo de gestão do hospital.
+SIH,RD,RUBRICA,Zerado
+SIH,RD,IND_VDRL,Indica exame VDRL.
+SIH,RD,MUNIC_MOV ,Município do Estabelecimento.
+SIH,RD,COD_IDADE,Unidade de medida da idade.
+SIH,RD,IDADE,Idade.
+SIH,RD,DIAS_PERM,Dias de Permanência
+SIH,RD,MORTE,Indica Óbito
+SIH,RD,NACIONAL,Código da nacionalidade do paciente
+SIH,RD,NUM_PROC,Zerado
+SIH,RD,CAR_INT,Caráter da internação
+SIH,RD,TOT_PT_SP,Zerado
+SIH,RD,CPF_AUT,Zerado
+SIH,RD,HOMONIMO,Indicador se o paciente da AIH é homônimo do paciente de outra AIH.
+SIH,RD,NUM_FILHOS,Número de filhos do paciente.
+SIH,RD,INSTRU,Grau de instrução do paciente.
+SIH,RD,CID_NOTIF,CID de Notificação.
+SIH,RD,CONTRACEP1,Tipo de contraceptivo utilizado.
+SIH,RD,CONTRACEP2,Segundo tipo de contraceptivo utilizado.
+SIH,RD,GESTRISCO,Indicador se é gestante de risco.
+SIH,RD,INSC_PN,Número da gestante no pré-natal.
+SIH,RD,SEQ_AIH5,Sequencial de longa permanência (AIH tipo 5).
+SIH,RD,CBOR,"Ocupação do paciente, segundo a Classificação Brasileira de Ocupações – CBO."
+SIH,RD,CNAER,Código de acidente de trabalho.
+SIH,RD,VINCPREV,Vínculo com a Previdência.
+SIH,RD,GESTOR_COD,Motivo de autorização da AIH pelo Gestor.
+SIH,RD,GESTOR_TP,Tipo de gestor
+SIH,RD,GESTOR_CPF,Número do CPF do Gestor
+SIH,RD,GESTOR_DT,Data da autorização dada pelo Gestor (aaaammdd)
+SIH,RD,CNES,Código CNES do hospital
+SIH,RD,CNPJ_MANT,CNPJ da mantenedora
+SIH,RD,INFEHOSP,Status de infecção hospitalar.
+SIH,RD,CID_ASSO,CID causa
+SIH,RD,CID_MORTE,CID da morte
+SIH,RD,COMPLEX,Complexidade.
+SIH,RD,FINANC,Tipo de financiamento
+SIH,RD,FAEC_TP,Subtipo de financiamento FAEC.
+SIH,RD,REGCT,Regra contratua
+SIH,RD,RACA_COR,Raça/Cor do paciente
+SIH,RD,ETNIA,"Etnia do paciente, se raça cor for indígena."
+SIH,RD,SEQUENCIA,Sequencial da AIH na remessa
+SIH,RD,REMESSA,Número da remessa
+SIH,RD,AUD_JUST,Justificativa do auditor para aceitação da AIH sem o número do Cartão Nacional de Saúde
+SIH,RD,SIS_JUST,Justificativa do estabelecimento para aceitação da AIH sem o número do Cartão Nacional de Saúde.
+SIH,RD,VAL_SH_FED,Valor do complemento federal de serviços hospitalares. Está incluído no valor total da AIH.
+SIH,RD,VAL_SP_FED,Valor do complemento federal de serviços profissionais. Está incluído no valor total da AIH.
+SIH,RD,VAL_SH_GES,Valor do complemento do gestor (estadual ou municipal) de serviços hospitalares. Está incluído no valor total da AIH.
+SIH,RD,VAL_SP_GES,Valor do complemento do gestor (estadual ou municipal) de serviços profissionais. Está incluído no valor total da AIH.
+SIH,RD,VAL_UCI,Valor de UCI.
+SIH,RD,MARCA_UCI,Tipo de UCI utilizada pelo paciente.
+SIH,RD,DIAGSEC1,Diagnóstico secundário1
+SIH,RD,DIAGSEC2,Diagnóstico secundário2
+SIH,RD,DIAGSEC3,Diagnóstico secundário3
+SIH,RD,DIAGSEC4,Diagnóstico secundário4
+SIH,RD,DIAGSEC5,Diagnóstico secundário5
+SIH,RD,DIAGSEC6,Diagnóstico secundário6
+SIH,RD,DIAGSEC7,Diagnóstico secundário7
+SIH,RD,DIAGSEC8,Diagnóstico secundário8
+SIH,RD,DIAGSEC9,Diagnóstico secundário9
+SIH,RD,TPDISEC1,Tipo de diagnóstico secundário 1
+SIH,RD,TPDISEC2,Tipo de diagnóstico secundário 2
+SIH,RD,TPDISEC3,Tipo de diagnóstico secundário 3
+SIH,RD,TPDISEC4,Tipo de diagnóstico secundário 4
+SIH,RD,TPDISEC5,Tipo de diagnóstico secundário 5
+SIH,RD,TPDISEC6,Tipo de diagnóstico secundário 6
+SIH,RD,TPDISEC7,Tipo de diagnóstico secundário 7
+SIH,RD,TPDISEC8,Tipo de diagnóstico secundário 8
+SIH,RD,TPDISEC9,Tipo de diagnóstico secundário 9
+SIH,SP,SP_GESTOR,Unidade de Federação + Código Município de Gestão ou UF0000 se o Estabelecimento Executante está sob Gestão Estadual.
+SIH,SP,SP_UF,Unidade da Federação.
+SIH,SP,SP_AA,Ano da internação.
+SIH,SP,SP_MM,Mês da internação.
+SIH,SP,SP_CNES,Código do CNES do Estabelecimento de Saúde executante da AIH.
+SIH,SP,SP_NAIH,Número da AIH.
+SIH,SP,SP_PROCREA,Procedimento principal realizado na AIH.
+SIH,SP,SP_DTINTER,Data da internação
+SIH,SP,SP_DTSAIDA,Data de saída
+SIH,SP,SP_NUM_PR,Zerado
+SIH,SP,SP_TIPO,Zerado
+SIH,SP,SP_CPFCGC,"CNES, CPF ou CNPJ do prestador do serviço do ato profissional"
+SIH,SP,SP_ATOPROF,Procedimento referente ao ato profissional.
+SIH,SP,SP_TP_ATO,Zerado.
+SIH,SP,SP_QTD_ATO,Quantidade de atos profissionais
+SIH,SP,SP_PTSP,Quantidade de pontos
+SIH,SP,SP_NF,"Nota fiscal do material empregado quando órtese/prótese, quando não, o campo representa a data do ato."
+SIH,SP,SP_VALATO,Valor do ato profissional.
+SIH,SP,SP_M_HOSP,Município de localização do Estabelecimento Executante da AIH.
+SIH,SP,SP_M_PAC,Município de residência do paciente
+SIH,SP,SP_DES_HOS,Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento.
+SIH,SP,SP_DES_PAC,Indica se a UF de residência do paciente é diferente da UF de localização do estabelecimento.
+SIH,SP,SP_COMPLEX,Complexidade do ato profissional
+SIH,SP,SP_FINANC,Tipo de financiamento do ato profissional
+SIH,SP,SP_CO_FAEC,Tipo de financiamento (04-FAEC) + Subtipo de financiamento relacionado ao tipo de financiamento (04-FAEC) do ato profissional.
+SIH,SP,SP_PF_CBO,Código de Ocupação Brasileira do Profissional que realizou o ato ou “00000” caso não tenha sido.
+SIH,SP,SP_PF_DOC,Documento de pessoa jurídica.
+SIH,SP,SP_PJ_DOC,Documento de pessoa física
+SIH,SP,IN_TP_VAL,Tipo de valor: 1 - SP /2 –SH.
+SIH,SP,SEQUENCIA,Código sequencia
+SIH,SP,REMESSA,Nome da remessa
+SIH,SP,SERV_CLA,Serviço/Classificação
+SIH,SP,SP_CIDPRI,CID Principal.
+SIH,SP,SP_CIDSEC,CID Secundário
+SIH,SP,SP_QT_PROC,Quantidade de procedimentos realizados
+SIH,SP,SP_U_AIH,Indicador único da AIH. Contabiliza a AIH sem repetições
+SIM,,NUMERODO,"Número da DO, seqüencial por UF informante e por ano. "
+SIM,,TIPOBITO,1: óbito fetal 2: óbito não fetal
+SIM,,DTOBITO,"Data do óbito, no formato ddmmaaaa"
+SIM,,HORAOBITO,Hora do falecimento. 
+SIM,,NATURAL,"Naturalidade, conforme a tabela de países. Se for brasileiro, porém, o primeiro dígito contém 8 e os demais o código da UF de naturalidade."
+SIM,,DTNASC,Data de nascimento do falecido
+SIM,,IDADE,"Idade, composto de dois subcampos. O primeiro, de 1 dígito, indica a unidade da idade, conforme a tabela a seguir. O segundo, de dois dígitos, indica a quantidade de unidades: 0: Idade ignorada, o segundo subcampo e 1: Horas, o segundo subcampo varia de 01 a 23, 2: Dias, o segundo subcampo varia de 01 a 29, 3: Meses, o segundo subcampo varia de 01 a 11, 4: Anos, o segundo subcampo varia de 00 a 99, 5: Anos (mais de 100 anos), o segundo subcampo varia de 0 a 99, exemplos: 000: Idade ignorada, 020: 20 minutos, 103: 3 horas, 204: 4 dias, 305: 5 meses, 400: menor de 1 ano, mas não se sabe o numero de horas, dias ou meses 410: 10 anos, 505: 105 anos"
+SIM,,SEXO,"Sexo, conforme a tabela: 0: Ignorado, 1: Masculino, 2: Feminino"
+SIM,,RACACOR,"Raça/Cor: 1:Branca, 2:Preta, 3:Amarela, 4: Parda, 5: Indígena"
+SIM,,ESTCIVIL,"Estado civil, conforme a tabela: 1: Solteiro 2: Casado 3: Viúvo 4: Separado judicialmente 9: Ignorado "
+SIM,,ESC,"Escolaridade, Anos de estudo concluídos: 1: Nenhuma, 2: 1 a 3 anos, 3: 4 a 7 anos, 4: 8 a 11 anos, 5: 12 e mais, 9: Ignorado "
+SIM,,OCUP,"Ocupação, conforme a Classificação Brasileira de Ocupações (CBO-2002)"
+SIM,,CODMUNRES,Município de residência do falecido
+SIM,,CODBAIRES,Código do Bairro de residência
+SIM,,LOCOCOR,"Local de ocorrência do óbito, conforme a tabela: 9: Ignorado, 1: Hospital, 2: Outro estab saúde, 3: Domicílio, 4: Via Pública, 5: Outros"
+SIM,,CODESTAB,Código do estabelecimento
+SIM,,CODMUNOCOR,"Município de ocorrência do óbito, conforme códigos IBGE"
+SIM,,CODBAIOCOR,Código do bairro de ocorrência
+SIM,,IDADEMAE,Idade da mãe em anos
+SIM,,ESCMAE,"Escolaridade, Anos de estudo concluídos: 1: Nenhuma, 2: 1 a 3 anos, 3: 4 a 7 anos, 4: 8 a 11 anos, 5: 12 e mais, 9: Ignorado"
+SIM,,OCUPMAE,"Ocupação da mãe, conforme codificação de OCUPACAO"
+SIM,,QTDFILVIVO,Número de filhos vivos
+SIM,,QTDFILMORT,"Número de filhos mortos, ignorados, não incluindo o próprio"
+SIM,,GRAVIDEZ,"Tipo de gravidez, conforme a tabela: 9: Ignorado, 1: Única, 2: Dupla, 3: Tripla e mais"
+SIM,,GESTACAO,"Semanas de gestação, conforme as tabelas: 9: Ignorado, 1: Menos de 22 semanas, 2: 22 a 27 semanas, 3: 28 a 31 semanas, 4: 32 a 36 semanas5: 37 a 41 semanas, 6: 42 semanas e mais"
+SIM,,PARTO,"Tipo de parto, conforme a tabela: 9: Ignorado, 1: Vaginal, 2: Cesáreo"
+SIM,,OBITOPARTO,"Morte em relação ao parto, conforme tabela: 9: Ignorado, 1: Antes, 2: Durante, 3: Depois"
+SIM,,PESO,"Peso ao nascer, em gramas."
+SIM,,NUMERODN,Número da DN
+SIM,,OBITOGRAV,"Morte durante a Gravidez conforme tabela: 9: Ignorado, 1: Sim, 2: Não"
+SIM,,OBITOPUERP,"Morte durante o puerpério, conforme tabela: 9: Ignorado, 1: Sim, ate 42 dias, 2: Sim, de 43 dias a 01 ano, 3: Não"
+SIM,,ASSISTMED,"Indica se houve assistência medica, conforme a tabela: 9: Ignorado, 1: Com assistência, 2: Sem assistência"
+SIM,,EXAME,"Indica se houve exame complementar, conforme a tabela: 9: Ignorado, 1: Sim, 2: Não"
+SIM,,CIRURGIA,"Indica se houve cirurgia, conforme a tabela: 9: Ignorado, 1: Sim, 2: Não"
+SIM,,NECROPSIA,"Indica se houve necrópsia, conforme a tabela: 9: Ignorado, 1: Sim, 2: Não"
+SIM,,LINHAA,"Linha A do atestado, conforme a Classificação Internacional de Doença (CID), 10a. Revisão."
+SIM,,LINHAB,"Linha B do atestado, conforme a Classificação Internacional de Doença (CID), 10a. Revisão."
+SIM,,LINHAC,"Linha C do atestado, conforme a Classificação Internacional de Doença (CID), 10a. Revisão. "
+SIM,,LINHAD,"Linha D do atestado, conforme a Classificação Internacional de Doença (CID), 10a. Revisão."
+SIM,,LINHA II,"Linha II do atestado, conforme a Classificação Internacional de Doença (CID), 10a. Revisão. "
+SIM,,CAUSABAS,"Causa básica, conforme a Classificação Internacional de Doença (CID), 10a. Revisão "
+SIM,,TPASSINA,-
+SIM,,DTATESTADO,Data do Atestado
+SIM,,CIRCOBITO,"Indica o tipo de acidente, se cabível: 9: Ignorado, 1: Acidente, 2: Suicídio, 3: Homicídio, 4: Outros "
+SIM,,ACIDTRAB,"Indica se foi acidente de trabalho, conforme a tabela: 9: Ignorado, 1: Sim, 2: Não "
+SIM,,FONTE,"Fonte da informação, conforme a tabela: 9: Ignorado, 1: Boletim de Ocorrência, 2: Hospital, 3: Família, 4: Outra"
+SIM,,TPPOS,"Óbito investigado 1-Sim, 2- Não"
+SIM,,DTINVESTIG,Data de investigação
+SIM,,CAUSABAS_O,"Causa básica original, a primeira informação que entra no sistema"
+SIM,,DTCADASTRO,Data de cadastro do registro no sistema. 
+SIM,,ATESTANTE,"Indica se o medico que assina atendeu o paciente, 1: Sim, 2: Substituto, 3: IML, 4: SVO, 5: Outros"
+SIM,,FONTEINV,"Fonte de investigação, 1 Comitê de Morte Materna e/ou Infantil, 2 Visita domiciliar / Entrevista família, 3 Estab Saúde / Prontuário, 4 Relacion com outros bancos de dados, 5 S V O, 6 I M L, 7 Outra fonte, 8 Múltiplas fontes, 9 Ignorado"
+SIM,,DTRECEBIM,"Data de recebimento no nível central, data da última atualização do registro"
+SIM,,UFINFORM,Código da UF que informou o registro. 
+SIM,,CODINST,Código da instalação da geração dos registros
+SIM,,CB_PRE,Causa selecionada sem re-seleção (novo SCB). 

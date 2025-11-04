@@ -1,0 +1,128 @@
+sistema,subsistema,nome,
+CIH,CR,Sistema de Comunicação de Informação Hospitalar,
+CIH,DAD,,
+CIHA,CIHA,Sistema de Comunicação de Informação Hospitalar e Ambulatorial,
+CNES_DC,DC,Dados Complementares,
+CNES_EE,EE,Estabelecimento de Ensino,
+CNES_EF,EF,Estabelecimento Filantrópico,
+CNES_EP,EP,Equipes,
+CNES_EQ,EQ,Equipamentos,
+CNES_GM,GM,Gestão e Metas,
+CNES_HB,HB,Habilitação,
+CNES_IN,IN,Incentivos,
+CNES_LT,LT,Leitos,
+CNES_PF,PF,Profissional,
+CNES_RC,RC,Regra Contratual,
+CNES_SR,SR,Serviço Especializado,
+CNES_ST,ST,Estabelecimentos,
+PNI,CPNI,,
+PNI,DPNI,,
+SIA1,PA,Produção Ambulatorial,
+SIA2,AB,Laudo de Acompanhamento à Cirurgia Bariátrica,
+SIA2,ABO,Acompanhamento Pós Cirurgia Bariátrica,
+SIA2,ACF,Laudo de Confecção de Fístula,
+SIA2,AD,Laudos Diversos,
+SIA2,AM,Laudo de Medicamentos,
+SIA2,AMP,Laudo de Acompanhamento Multiprofissional,
+SIA2,AN,Laudo de Nefrologia,
+SIA2,AQ,Laudo de Quimioterapia,
+SIA2,AR,Laudo de Radioterapia,
+SIA2,ATD,Laudo de Tratamento Dialítico,
+SIA2,BI,Boletim Individual,
+SIA2,IMPBO,,
+SIA2,PA,Produção Ambulatorial,
+SIA2,PS,Psicossocial,
+SIA2,SAD,Atenção Domiciliar,
+SIH1,RD,Reduzido de AIH,
+SIH1,RJ,AIH rejeitada,
+SIH1,SP,Serviços Profissionais,
+SIH2,CH,,
+SIH2,CM,,
+SIH2,ER,Rejeitadas com Código de Erro,
+SIH2,RD,Reduzido de AIH,
+SIH2,RJ,AIH rejeitada,
+SIH2,SP,Serviços Profissionais,
+SIM1,DOE,Declarações de Óbitos por causas externas,
+SIM1,DOF,Declarações de Óbitos Fetais,
+SIM1,DOI,Declarações de Óbitos infantis,
+SIM1,DOM,Declarações de Óbitos maternos,
+SIM2,DO,Declarações de Óbitos,
+SINAN,ANIM,Animais Peçonhentos,
+SINAN,BOTU,Botulismo,
+SINAN,CHAG,Doença de Chagas,
+SINAN,COLE,Cólera,
+SINAN,COQU,Coqueluche,
+SINAN,DENG,Dengue e Chikungunya,
+SINAN,DIFT,Difteria,
+SINAN,ESQU,Esquitossomose,
+SINAN,FAMA,Febre Amarela,
+SINAN,FMAC,Febre Maculosa,
+SINAN,FTIF,Febre Tifóide,
+SINAN,HANS,Hanseníase,
+SINAN,HANT,Hantavirose,
+SINAN,IEXO,Intoxicação exógena,
+SINAN,LEIV,Leishmaniose Visceral,
+SINAN,LEPT,Leptospirose,
+SINAN,LTAN,Leishimaniose Tegumentar Americana,
+SINAN,MALA,Malária,
+SINAN,MENI,Meningite,
+SINAN,PEST,Peste,
+SINAN,PFA,,
+SINAN,PFAN,Paralisia Flácida Aguda,
+SINAN,RAIV,Raiva Humana,
+SINAN,TETA,Tetano Acidental,
+SINAN,TETN,Tetano Neonatal,
+SINAN,TUBE,Tuberculose,
+SINAN,VIOL,Violência Interpessoal ou Autoprovocada,
+SINASC1,DNR,Nascimentos por UF de residência,
+SINASC2,DN,Declaraçõe de Nascidos Vivos,
+SISAB,CT,Contatos Assistenciais,
+SISAB,PR,Procedimentos Realizados,
+,,,
+,,,
+sistema,prefixo,label,FTP
+CIH,CR,Sistema de Comunicação de Informação Hospitalar,ftp://ftp.datasus.gov.br/dissemin/publicos/CIH/200801_201012/Dados/
+CIHA,CI,Sistema de Comunicação de Informação Hospitalar e Ambulatorial,ftp://ftp.datasus.gov.br/dissemin/publicos/CIHA/201101_/Dados/
+CNES,DC,Dados Complementares ,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/DC
+CNES,EE,Estabelecimento de Ensino,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/EE
+CNES,EF,Estabelecimento Filantrópico,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/EF
+CNES,EP,Equipes,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/EP
+CNES,EQ,Equipamentos,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/EQ
+CNES,GM,Gestão e Metas,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/GM
+CNES,HB,Habilitação,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/HB
+CNES,IN,Incentivos,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/IN
+CNES,LT,Leitos,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/LT
+CNES,PF,Profissional,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/PF
+CNES,RC,Regra Contratual,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/RC
+CNES,SR,Serviço Especializado,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/SR
+CNES,ST,Estabelecimentos,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/ST
+SIA,ABO,Acompanhamento Pós Cirurgia Bariátrica,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,AB,Laudo de Acompanhamento a Cirurgia Bariátrica,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,ACF,Confeção de Fístula Arteriovenosa,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,AD,Laudos Diversos,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,AM,Laudo de Medicamentos,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,AN,Laudo de Nefrologia,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,AQ,Laudo de Quimioterapia,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,AR,Laudo de Radioterapia,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,ATD,Tratamento Dialítico,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,BI,Boletim Individual,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,PA,Produções ambulatoriais 1994-1999,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/199407_200712/Dados/
+SIA,PA,Produção Ambulatorial,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,PS,Psicossocial,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIA,SAD,Atenção Domiciliar,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+SIH,ER,Rejeitadas com Código de Erro,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/200801_/Dados/
+SIH,RD,Reduzido de AIH,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/199201_200712/Dados/
+SIH,RD,Reduzido de AIH,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/200801_/Dados/
+SIH,RJ,AIH rejeitada,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/199201_200712/Dados/
+SIH,RJ,AIH rejeitada,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/200801_/Dados/
+SIH,SP,Serviços Profissionais,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/199201_200712/Dados/
+SIH,SP,Serviços Profissionais,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/200801_/Dados/
+SIM,DO,Declarações de Óbitos,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DORES/
+SIM,DOEXT,Declarações de Óbitos por causas externas,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DOFET/
+SIM,DOFET,Declarações de Óbitos Fetais ,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DOFET/
+SIM,DOINF,Declarações de Óbitos infantis,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DOFET/
+SIM,DOMAT,Declarações de Óbitos maternos,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DOFET/
+SINASC,DNRIG,Declaraçõe de Nascidos Vivos,ftp://ftp.datasus.gov.br/dissemin/publicos/SINASC/ANT/DNIGN/
+SINASC,DN,Declaraçõe de Nascidos Vivos,ftp://ftp.datasus.gov.br/dissemin/publicos/SINASC/NOV/DNRES/
+SINASC,DNR,Dados dos nascimentos por UF de residência,ftp://ftp.datasus.gov.br/dissemin/publicos/SINASC/ANT/DNRES/
+SISPRENATAL,PN,Pré-Natal,ftp://ftp.datasus.gov.br/dissemin/publicos/SISPRENATAL/201201_/Dados/

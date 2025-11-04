@@ -1,0 +1,14 @@
+id,sistema,nome,gestor,url
+1,SIA1,SIA - Sistema de Informações Ambulatoriais do SUS de 1994 a 2007,SAES/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/199407_200712/Dados/
+2,SIA2,SIA - Sistema de Informações Ambulatoriais do SUS a partir de 2008,SAES/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Dados/
+3,SIH1,SIH - Sistema de Informações Hospitalares do SUS de 1992 a 2007,SAES/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/199201_200712/Dados/
+4,SIH2,SIH - Sistema de Informações Hospitalares do SUS a partir de 2008,SAES/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SIHSUS/200801_/Dados/
+5,SIM1,SIM - Sistema de Informações de Mortalidade - Declarações de Óbitos Fetais,SVS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DOFET/
+6,SIM2,SIM - Sistema de Informações de Mortalidade,SVS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SIM/CID10/DORES/
+7,SINAN,SINAN - Sistema de Informação de Agravos de Notificação,SVS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/
+8,SISAB,SISAB - Sistema de Informação em Saúde para a Atenção Básica,SAPS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/CMD/DadosSISAB/
+9,PNI,SIPNI - Programa Nacional de Imunizações,SVS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/PNI/DADOS/
+10,CNES,Cadastro Nacional de Estabelecimentos de Saúde,SAES/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/CNES/200508_/Dados/ | SOAP XML
+11,SIGTAP,"Sistema de Gerenciamento da Tabela de Procedimentos, Medicamentos e OPM do SUS",SAES/MS,"ftp://ftp.datasus.gov.br/dissemin/publicos/SIASUS/200801_/Auxiliar/TAB_SIA.zip  TB_FORMA.DBF, TB_GRUPO.DBF, TB_SIGTAP.DBF, TB_SUBGR.DBF | SOAP XML"
+12,SINASC,Sistema de Informação sobre Nascidos Vivos,SVS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SINASC/ANT/DNRES/ ftp://ftp.datasus.gov.br/dissemin/publicos/SINASC/NOV/DNRES/
+13,SISPRENATAL,Sistema de Acompanhamento da Gestante,SVS/MS,ftp://ftp.datasus.gov.br/dissemin/publicos/SISPRENATAL/201201_/Dados/
